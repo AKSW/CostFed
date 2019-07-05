@@ -681,7 +681,7 @@ public class TBSSSummariesGenerator {
 		{
 			rc = 0;
 			StringBuilder qb = new StringBuilder();
-			qb.append("SELECT ?s count(?o) as ?oc");
+			qb.append("SELECT ?s (count(?o) as ?oc)");
 			if (null != graph) {
 				qb.append(" FROM <").append(graph).append('>');
 			}
